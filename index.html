@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Box Shadow Generator</title>
+	</head>
+	<body>
+		<div class="config-container">
+            <i class="fa-solid fa-cube"></i>
+			<div class="input-group">
+				<label for="horizontalInput">Horizontal Offset</label>
+				<input type="range" name="horizontalInput" id="horizontalInput" min="0" max="50" />
+                <span class="range-value"></span>
+			</div>
+			<div class="input-group">
+				<label for="verticalInput">Vertical Offset</label>
+				<input type="range" name="verticalInput" id="verticalInput" min="0" max="50" />
+                <span class="range-value"></span>
+			</div>
+			<div class="input-group">
+				<label for="blurInput">Blur</label>
+				<input type="range" name="blurInput" id="blurInput" min="0" max="100"/>
+                <span class="range-value"></span>
+			</div>
+			<div class="input-group">
+				<label for="spreadInput">Spread</label>
+				<input type="range" name="spreadInput" id="spreadInput" min="0" max="50"/>
+                <span class="range-value"></span>
+			</div>
+			<div class="input-group">
+				<label for="colorInput">Shadow Color</label>
+				<input type="color" name="colorInput" id="colorInput" />
+			</div>
+			<div class="input-group">
+				<label for="opacityInput">Opacity</label>
+				<input type="range" name="opacityInput" id="opacityInput" min="0.0" max="1.0" step="0.1" value="1"/>
+                <span class="range-value"></span>
+			</div>
+			<div class="input-group">
+				<label for="insetInput">Inset Shadow</label>
+				<input type="checkbox" name="insetInput" id="insetInput" />
+			</div>
+		</div>
+		<div class="preview-container">
+            <div class="css-code">
+                <span class="code">box-shadow: 0px 0px 0px 0px #000000;</span>
+                <button class="copy-btn"><i class="fa-regular fa-clone"></i></button>
+            </div>
+			<div class="preview"></div>
+		</div>
+	</body>
+</html>
