@@ -27,11 +27,8 @@ const updateCopy = () => {
     const code = `box-shadow: ${preview.style.boxShadow};\nopacity: ${preview.style.opacity};`;
     codeText.textContent = code;
 }
-const copytoClipboard = (text) => {
-    navigator.clipboard.writeText(text)
-}
 copyBtn.addEventListener("click", () => {
-    copytoClipboard(codeText.textContent)
+    navigator.clipboard.writeText(codeText.textContent)
     copyBtn.firstChild.style.color = "green";
     setTimeout(() => {
         copyBtn.firstChild.style.color = "black";
